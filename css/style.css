@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	color: #ffffff;
+	font-family: inter, sans-serif;
+}
+
+:root {
+	background-color: rgb(18, 18, 18);
+	--amarillo: #f2941f;
+	--gris: rgba(255, 255, 255, 0.20);
+}
+
+h1 {
+    display: none;
+}
+
+/*-------------------- FUENTES ----------------------*/
+
+@font-face {
+	font-family: inter;
+	src:url(../font/inter.ttf)
+}
+
+@font-face {
+	font-family: dosis;
+	src:url(../font/dosis.ttf)
+}
+
+/*-------------------- BARRA ----------------------*/
+
+.encabezado {
+    position: sticky;
+	top: 0;
+	display: flex;
+	border-bottom: 1px solid var(--amarillo);
+	background-color: rgb(29, 29, 29);
+	height: 55px;
+	z-index: 5;
+}
+
+/*-------------------- BANNER PRINCIPAL ----------------------*/
+
+.banner {
+	height: 550px;
+	background-image: url(../img/hades2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 10px -10px 30px 30px rgb(18, 18, 18) inset;
+    padding-left: 60px;
+}
+
+.banner__text {
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+.banner__button {
+	font-size: 1rem;
+	font-family: inter;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	border: 1px solid transparent;
+	background-color: rgb(46, 46, 46);
+}
+
+.banner__button:hover {
+	border: 1px solid var(--amarillo);
+	background-color: rgb(18, 18, 18);
+}
+
+.carousel-item {
+	height: 90vh;
+}
+
+.d-block {
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-control-prev {
+	width: 5%;
+	z-index: 3;
+}
+
+.carousel-control-next {
+	width: 5%;
+	z-index: 3;
+}
+
+.shadow__banner {
+	position: absolute;
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	box-shadow: 10px -10px 30px 30px rgb(18, 18, 18) inset;
+	z-index: 2;
+}
+
+.carousel__info {
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+	z-index: 3;
+}
+
+.banner__img {
+	width: 40%;
+}
+
+.navbar {
+	width: 100%;
+}
+
+.nav__logo {
+	width: 220px;
+	padding-left: 16px;
+}
+
+.navbar-nav {
+	background-color: rgb(29, 29, 29);
+}
+
+.nav-link {
+	color: #ffffff;
+	font-size: 1.2rem;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.nav-link:hover {
+	color: var(--amarillo);
+}
+
+.navbar-nav .nav-link.active {
+	color: var(--amarillo);
+}
+
+.container-fluid {
+	--bs-gutter-x: 0px;
+}
+
+.navbar-toggler {
+	color: transparent;
+	border: none;
+}
+
+.navbar-toggler i {
+	color: #ffffff;
+}
+
+.navbar-toggler i:hover {
+	color: var(--amarillo);
+}
+
+
+@media (max-width: 992px) {
+	.nav-link {
+		border-bottom: 1px solid var(--gris);
+	}
+	.navbar-nav {
+		border-bottom: 1px solid var(--amarillo);
+	}
+}
+
+@media (max-width: 600px) {
+	.carousel__info {
+		font-size: 0.8rem;
+	}
+	.banner__button {
+		font-size: 0.9rem;
+		padding: 5px 10px;
+	}
+}
