@@ -51,6 +51,14 @@ h1 {
     padding-left: 60px;
 }
 
+.carousel__img {
+	width: 100%;
+}
+
+.carousel__img2 {
+	display: none;
+}
+
 .banner__text {
 	font-size: 1rem;
 	margin-bottom: 10px;
@@ -73,11 +81,6 @@ h1 {
 
 .carousel-item {
 	height: 90vh;
-}
-
-.d-block {
-	height: 100%;
-	width: 100%;
 }
 
 .carousel-control-prev {
@@ -106,7 +109,7 @@ h1 {
 	z-index: 3;
 }
 
-.banner__img {
+.logo__img {
 	width: 40%;
 }
 
@@ -156,6 +159,11 @@ h1 {
 }
 
 
+.banner__fondo {
+	height: 100%;
+}
+
+
 @media (max-width: 992px) {
 	.nav-link {
 		border-bottom: 1px solid var(--gris);
@@ -172,5 +180,8 @@ h1 {
 	.banner__button {
 		font-size: 0.9rem;
 		padding: 5px 10px;
+	}
+	.shadow__banner {
+		box-shadow: -1px -10px 30px 18px rgb(18, 18, 18) inset;
 	}
 }
