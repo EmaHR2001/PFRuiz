@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/8c7ff1173b.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="../image/png" href="../img/logo_white_mini.png"/>
+        <!-- CUSTOM CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <title>IndieGames</title>
+    </head>
+
+<body>
+    <header class="navbar navbar-expand-lg">
+        <nav class="container">
+            <img class="nav__logo" src="../img/logo_white.png" alt="logo de indiegames">
+            <button class="menu__nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./guias.html">Guias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link activo" href="./desarrolladoras.html">Desarrolladoras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./unete.html">Unete</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1>IndieGames / juegos indie noticias / ofertas / videojuegos </h1>
+
+    <main>
+
+        <div id="carousel__principal" class="carousel slide" data-bs-ride="false">
+
+            <div class="shadow__carousel"></div>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel__principal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel__principal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel__principal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/hades_c_mobile.jpg" class="carousel__img d-sm-none" alt="banner de hades">
+                    <img src="../img/hades2.jpg" class="carousel__img__dest d-none d-sm-inline-block" alt="banner de hades">
+                    <div class="carousel__info">
+                        <img class="logo__img" src="../img/hades_banner.png" alt="logo de hades">
+                        <p class="tracking-in-expand">Some representative placeholder content for the second slide.</p>
+                        <button class="carousel__button">VER MAS</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/celeste_c_mobile.jpg" class="carousel__img d-sm-none" alt="banner de celeste">
+                    <img src="../img/celeste__banner.jpg" class="carousel__img__dest d-none d-sm-inline-block" alt="banner de celeste">
+                    <div class="carousel__info">
+                        <img class="logo__img" src="../img/celeste.png" alt="logo de celeste">
+                        <p class="tracking-in-expand">Some representative placeholder content for the second slide.</p>
+                        <button class="carousel__button">VER MAS</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/hollow_c_mobile.jpg" class="carousel__img d-sm-none" alt="banner de hollow knight">
+                    <img src="../img/hollow.jpg" class="carousel__img__dest d-none d-sm-inline-block" alt="banner de hollow knight">
+                    <div class="carousel__info">
+                        <img class="logo__img" src="../img/hollow_banner.png" alt="logo de hollow knight">
+                        <p class="tracking-in-expand">Some representative placeholder content for the second slide.</p>
+                        <button class="carousel__button">VER MAS</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev flechas" type="button" data-bs-target="#carousel__principal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next flechas" type="button" data-bs-target="#carousel__principal" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+        <section class="container">
+            <h2 class="titulo__seccion">Descubre mas sobre tus desarrolladores favoritos.</h2>
+
+            <article class="des__contain">
+                <a><img class="creador__banner" src="../img/team__cherry.jpg" alt="team cherry banner"></a>
+                <h3>Creadores de:</h3>
+                <a>Hollow Knight /</a>
+                <a>Hollow Knight Silk Song (proximamente)</a>
+            </article>
+
+            <article class="des__contain">
+                <a><img class="creador__banner" src="../img/studio_mdrh.jpg" alt="studio mdrh banner"></a>
+                <h3>Creadores de:</h3>
+                <a>Cuphead</a>
+            </article>
+
+            <article class="des__contain">
+                <a><img class="creador__banner" src="../img/supergiant_games.jpg" alt="supergiant banner"></a>
+                <h3>Creadores de:</h3>
+                <a>Hades /</a>
+                <a>Transistor /</a>
+                <a>Bastion /</a>
+                <a>Pyre</a>
+            </article>
+
+            <article class="des__contain">
+                <a><img class="creador__banner" src="../img/motion.jpg" alt="motion"></a>
+                <h3>Creadores de:</h3>
+                <a>Dead Cells /</a>
+                <a>Arkadeo /</a>
+                <a>Monster Hotel /</a>
+                <a>Mush</a>
+            </article>
+
+        </section>    
+
+    </main>
+
+    <footer class="row justify-content-md-between">
+
+        <div class="footer__div col-md-4 p-md-2 mb-3">
+            <img class="footer__logo" src="../img/logo_white.png" alt="">
+            <p class="footer__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus facere asperiores accusantium fugiat veniam, odio blanditiis accusamus facilis similique sint suscipit. Quis ducimus, labore deleniti in numquam facilis, at deserunt, magnam fugit ullam ipsum voluptatem amet voluptatibus dolor ex esse?
+            </p>
+            <h4>Redes sociales</h4>
+            <div class="footer__icons">
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+            </div>
+        </div>
+
+        <div class="footer__nav col-md-4">
+            <h4>Navegacion</h4>
+            <nav class="nav__footer">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="">Desarrolladoras</a></li>
+                    <li><a href="">Guias</a></li>
+                    <li><a href="">Unete</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__div col-md-4">
+            <h4>Contacto</h4>
+            <div class="footer__contact">
+                <div class="footer__info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>666-666-666-666</p>
+                </div>
+                <div class="footer__info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Dalequesonpasteles@hotmail.com</p>
+                </div>
+                <div class="footer__info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Gotham City</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="footer__bajo">
+            <h5>Diseño by EMANUEL RUIZ</h5>
+            <img class="footer__logo2 d-none d-md-block" src="../img/logo_white2.png" alt="">
+        </section>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
