@@ -1,0 +1,171 @@
+.acordion {
+    margin: 20px 0px;
+    border: 1px solid #0f0f0f;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .accordion-header {
+        margin-bottom: -10px;
+    }
+
+    .bannerd {
+        background-size: 100% 100%;
+        height: 100px;
+        width: 100%;
+        border: none;
+
+        &--one {
+            background-image: url(../img/supergiant_games.jpg);
+        }
+
+        &--two {
+            background-image: url(../img/studio_mdrh.jpg);
+        }
+
+        &--three {
+            background-image: url(../img/motion.jpg);
+        }
+
+        @include mobile-md {
+            height: 200px;
+        }
+    }
+
+    &__open {
+
+        &__content {
+            background-size: auto 100%;
+            background-position: center center;
+
+            &--one {
+                background-image: url(../img/hades-5260957.jpg);
+            }
+
+            &--two {
+                background-image: url(../img/Cuphead__fondo.jpg);
+            }
+
+            &--three {
+                background-image: url(../img/Dead_cells__fondo.jpg);
+            }
+
+            .list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 20px;
+
+                &__games {
+                    width: 200px;
+                    margin: 5px;
+                }
+            }
+
+            .review {
+                object-fit: contain;
+
+                &__content {
+                    margin-top: 20px;
+
+                    div {
+                        padding: 3px 6px;
+                        display: flex;
+                        align-items: center;
+                        background-color: #0f0f0f;
+                        justify-content: space-between;
+
+                        .mano {
+                            font-size: 1.5rem;
+                            border-radius: 5px;
+                            padding: 3px;
+
+                            &--like {
+                                color: rgb(71, 194, 71);
+                                background-color: green;
+                            }
+
+                            &--dislike {
+                                color: rgb(255, 93, 93);
+                                background-color: red;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                        padding: 7px;
+                        margin: 0;
+                    }
+
+                    &--critic {
+                        height: 150px;
+                        font-size: 0.8rem;
+                        background-color: $color-terceario;
+                        color: white;
+                        overflow: scroll;
+                    }
+
+                    &--user {
+                        font-size: 0.8rem;
+                        background-color: #0f0f0f;
+                    }
+
+                    @include mobile-md {
+                        margin-top: 5px;
+                        width: 30%;
+                    }
+                }
+
+                @include mobile-md {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+.efecto-cartel {
+	-webkit-animation: efecto-cartel 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: efecto-cartel 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes efecto-cartel {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+@keyframes efecto-cartel {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}

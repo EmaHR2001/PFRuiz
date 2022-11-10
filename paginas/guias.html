@@ -9,14 +9,15 @@
     <!-- CUSTOM CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>IndieGames</title>
+    <title>Indiegames | Guias de juegos</title>
+    <meta name="description" content="Todas las novedades, noticias y ultimas ofertas del mundo indie de los videojuegos.">
 </head>
 
 <body>
     <header class="navbar navbar-expand-lg">
-        <nav class="container">
+        <nav class="nav container">
             <img class="nav__logo" src="../img/logo_white.png" alt="logo de indiegames">
-            <button class="menu__nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="nav__menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-caret-down"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-md-end" id="navbarText">
@@ -47,62 +48,71 @@
 
         <div id="carousel__principal" class="carousel slide" data-bs-ride="false">
 
-            <div class="shadow__carousel"></div>
+            <div class="carousel__shadow"></div>
 
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel__principal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel__principal" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel__principal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel__principal" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel__principal" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel__principal" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/hades_c_mobile.jpg" class="carousel__img d-sm-none" alt="banner de hades">
-                    <img src="../img/hades2.jpg" class="carousel__img__dest d-none d-sm-inline-block" alt="banner de hades">
+                    <img src="../img/hades_c_mobile.jpg" class="carousel-item__img d-sm-none" alt="banner de hades">
+                    <img src="../img/hades2.jpg" class="carousel-item__img d-none d-sm-inline-block"
+                        alt="banner de hades">
                     <div class="carousel__info">
-                        <img class="logo__img" src="../img/hades_banner.png" alt="logo de hades">
-                        <p class="tracking-in-expand">Some representative placeholder content for the second slide.</p>
-                        <button class="carousel__button">VER MAS</button>
+                        <img class="carousel__info__logo" src="../img/hades_banner.png" alt="logo de hades">
+                        <p class="tracking-in-expand">Descubre el nuevo dios agregado en el nuevo dlc de Hades.</p>
+                        <button class="boton__base pulsa">VER MAS</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/celeste_c_mobile.jpg" class="carousel__img d-sm-none" alt="banner de celeste">
-                    <img src="../img/celeste__banner.jpg" class="carousel__img__dest d-none d-sm-inline-block" alt="banner de celeste">
+                    <img src="../img/celeste_c_mobile.jpg" class="carousel-item__img d-sm-none" alt="banner de celeste">
+                    <img src="../img/celeste__banner.jpg" class="carousel-item__img d-none d-sm-inline-block"
+                        alt="banner de celeste">
                     <div class="carousel__info">
-                        <img class="logo__img" src="../img/celeste.png" alt="logo de celeste">
-                        <p class="tracking-in-expand">Some representative placeholder content for the second slide.</p>
-                        <button class="carousel__button">VER MAS</button>
+                        <img class="carousel__info__logo" src="../img/celeste.png" alt="logo de celeste">
+                        <p class="tracking-in-expand">Sigue esta nueva guia de Celeste para superar los niveles en tiempo record.</p>
+                        <button class="boton__base pulsa">VER MAS</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/hollow_c_mobile.jpg" class="carousel__img d-sm-none" alt="banner de hollow knight">
-                    <img src="../img/hollow.jpg" class="carousel__img__dest d-none d-sm-inline-block" alt="banner de hollow knight">
+                    <img src="../img/hollow_c_mobile.jpg" class="carousel-item__img d-sm-none"
+                        alt="banner de hollow knight">
+                    <img src="../img/hollow.jpg" class="carousel-item__img d-none d-sm-inline-block"
+                        alt="banner de hollow knight">
                     <div class="carousel__info">
-                        <img class="logo__img" src="../img/hollow_banner.png" alt="logo de hollow knight">
-                        <p class="tracking-in-expand">Some representative placeholder content for the second slide.</p>
-                        <button class="carousel__button">VER MAS</button>
+                        <img class="carousel__info__logo" src="../img/hollow_banner.png" alt="logo de hollow knight">
+                        <p class="tracking-in-expand">Mientras esperabas que nunca llegue Silk Song juega Hollow Knight por cuartodecima vez.</p>
+                        <button class="boton__base pulsa">VER MAS</button>
                     </div>
                 </div>
             </div>
 
-            <button class="carousel-control-prev flechas" type="button" data-bs-target="#carousel__principal" data-bs-slide="prev">
+            <button class="carousel-control-prev carousel__flechas" type="button" data-bs-target="#carousel__principal"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next flechas" type="button" data-bs-target="#carousel__principal" data-bs-slide="next">
+            <button class="carousel-control-next carousel__flechas" type="button" data-bs-target="#carousel__principal"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
 
         </div>
 
-        <section class="row container guide__section">
+        <section class="row container guide">
 
-            <h2 class="titulo__seccion">Ultimos articulos agregados</h2>
+            <h2>Ultimos articulos agregados</h2>
             
             <article class="guide__article mb-3 col-md-6 pulsa">
                 <div class="position-relative">
-                    <img class="img-fluid" src="../img/cult_of_the_lamb.jpg" alt="imagen de cult of the lamb">
+                    <img class="img-fluid img-cien" src="../img/cult_of_the_lamb.jpg" alt="imagen de cult of the lamb">
                     <div class="guide__info position-absolute bottom-0 p-2">
                         <p class="mb-0">Hace 3 dias</p>
                         <p class="mb-0">Descubre como mantener feliz a tu secta...</p>
@@ -114,7 +124,7 @@
 
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/shovel__guia.jpg" alt="imagen de guia de shovel">
+                        <img class="img-fluid img-cien" src="../img/shovel__guia.jpg" alt="imagen de guia de shovel">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 2 dias</p>
                             <p class="mb-0">Como superar...</p>
@@ -124,7 +134,7 @@
     
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/record__cuphead.jpg" alt="guia de cuphead">
+                        <img class="img-fluid img-cien" src="../img/record__cuphead.jpg" alt="guia de cuphead">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 7 dias</p>
                             <p class="mb-0">Guia de jefes...</p>
@@ -134,17 +144,17 @@
     
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/silksong__not.jpg" alt="silksong guia">
+                        <img class="img-fluid img-cien" src="../img/forager__guia.jpg" alt="forager guia">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 3 dias</p>
-                            <p class="mb-0">Aqui habria una guia...</p>
+                            <p class="mb-0">Descubre como romper la economia...</p>
                         </div>
                     </div>
                 </article>
                 
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/superhot__reto.jpg" alt="superhot guia">
+                        <img class="img-fluid img-cien" src="../img/superhot__reto.jpg" alt="superhot guia">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 10 dias</p>
                             <p class="mb-0">Como superar el reto...</p>
@@ -157,13 +167,13 @@
         </section>
 
         <section class="row container m-auto guide__section">
-            <h2 class="titulo__seccion">Guias</h2>
+            <h2>Guias</h2>
 
             <div class="row guide__padd col-md-9">
 
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/castle__guia.jpg" alt="guia de castle crasher">
+                        <img class="img-fluid img-cien" src="../img/castle__guia.jpg" alt="guia de castle crasher">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 7 dias</p>
                             <p class="mb-0">Guia de personajes...</p>
@@ -173,7 +183,7 @@
     
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/hades__guia.jpg" alt="guia de hades">
+                        <img class="img-fluid img-cien" src="../img/hades__guia.jpg" alt="guia de hades">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 4 dias</p>
                             <p class="mb-0">Guia de personajes...</p>
@@ -181,17 +191,17 @@
                     </div>
                 </article>
     
-                <div class="spam__sub d-inline-block mb-3 d-md-none">
-                    <div class="sub">
-                        <img class="spam__img d-md-none" src="../img/logo_white2.png" alt="oferta de Hollow Knight">
-                        <p>Unete a IndieGames y recibe novedades de guias directamente a tu correo.</p>
-                        <button>Unete</button>
+                <section class="sub d-block d-md-none">
+                    <div class="sub__content">
+                        <img class="sub__content__img d-md-none" src="../img/logo_white2.png" alt="logo de pagina">
+                        <p>Unete a indiegames y recibe notificaciones de las ultimas noticias directamente a tu correo electronico.</p>
+                        <button class="pulsa boton__unete">Unete</button>
                     </div>
-                </div>
+                </section>
     
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/isaac__guia.jpg" alt="guia de isaac">
+                        <img class="img-fluid img-cien" src="../img/isaac__guia.jpg" alt="guia de isaac">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 12+1 dias</p>
                             <p class="mb-0">Mejores sinergias...</p>
@@ -201,7 +211,7 @@
     
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/celeste__guia.jpg" alt="guia celeste">
+                        <img class="img-fluid img-cien" src="../img/celeste__guia.jpg" alt="guia celeste">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 2 dias</p>
                             <p class="mb-0">Descubre como superar...</p>
@@ -211,7 +221,7 @@
                 
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/blasphemus__guia.jpg" alt="guia de blasphemus">
+                        <img class="img-fluid img-cien" src="../img/blasphemus__guia.jpg" alt="guia de blasphemus">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 666 dias</p>
                             <p class="mb-0">Se un blasfemo con esta guia...</p>
@@ -221,7 +231,7 @@
 
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/gungeon__guia.jpg" alt="guia de enter the gungeon">
+                        <img class="img-fluid img-cien" src="../img/gungeon__guia.jpg" alt="guia de enter the gungeon">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 8 dias</p>
                             <p class="mb-0">Guia de todas las armas...</p>
@@ -231,7 +241,7 @@
 
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/cells__guia.jpg" alt="guia de dead cells">
+                        <img class="img-fluid img-cien" src="../img/cells__guia.jpg" alt="guia de dead cells">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 45 dias</p>
                             <p class="mb-0">Guia de rutas de...</p>
@@ -241,7 +251,7 @@
 
                 <article class="guide__article mb-3 col-md-6 pulsa">
                     <div class="position-relative">
-                        <img class="img-fluid" src="../img/forager__guia.jpg" alt="guia de forager">
+                        <img class="img-fluid img-cien" src="../img/forager__guia.jpg" alt="guia de forager">
                         <div class="guide__info position-absolute bottom-0 p-2">
                             <p class="mb-0">Hace 1 dia</p>
                             <p class="mb-0">Descubre como romper la economia...</p>
@@ -250,12 +260,12 @@
                 </article>
             </div>
 
-            <div class="spam__sub d-inline-block mb-3 d-none d-md-block col-md-3">
-                <div class="sub__lateral">
-                    <img class="spam__img img-fluid" src="../img/logo_white2.png" alt="oferta de Hollow Knight">
+            <div class="spam d-inline-block mb-3 d-none d-md-block col-md-3">
+                <div class="spam__lateral">
+                    <img class="spam__lateral__logo img-fluid" src="../img/logo_white2.png" alt="oferta de Hollow Knight">
                     <p>Unete a IndieGames y recibe novedades de guias directamente a tu correo.</p>
-                    <img class="sub__lateral__img d-none d-md-block img-fluid" src="../img/cult-of-the-lamb.jpg" alt="imagen de noticia de cult of the lamb">
-                    <button class="pulsa">Unete</button>
+                    <img class="spam__lateral__img d-none d-md-block img-fluid" src="../img/cult-of-the-lamb.jpg" alt="imagen de noticia de cult of the lamb">
+                    <button class="pulsa boton__unete">Unete</button>
                 </div>
             </div>
             
@@ -263,7 +273,7 @@
 
     </main>
 
-    <footer class="row justify-content-md-between">
+    <footer class="footer row justify-content-md-between">
 
         <div class="footer__div col-md-4 p-md-2 mb-3">
             <img class="footer__logo" src="../img/logo_white.png" alt="">

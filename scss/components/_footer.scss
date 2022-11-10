@@ -1,0 +1,66 @@
+.footer {
+    background-color: #000;
+    padding: 10px 10px;
+
+    i {
+        color: $color-primario;
+    }
+
+    ul {
+        padding: 0 0 0 15px;
+    }
+
+    &__div {
+        text-align: center;
+
+        .footer__text {
+            font-size: 0.7rem;
+        }
+
+        i {
+            font-size: 2rem;
+        }
+    }
+
+    &__info {
+        i {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__nav {
+        width: 150px;
+    }
+
+    &__logo {
+        margin-bottom: 10px;
+        width: 70%;
+    }
+
+    &__logo2 {
+        @include mobile-md {
+            width: 170px;
+        }
+    }
+
+    &__bajo {
+        padding-top: 10px;
+        border-top: 1px solid $color-terceario;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile-md {
+            font-size: 1rem;
+        }
+
+        h5 {
+            font-size: 0.7rem;
+            margin: 0px;
+
+            @include mobile-md {
+                font-size: 1rem;
+            }
+        }
+    }
+}

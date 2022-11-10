@@ -1,0 +1,50 @@
+.navbar {
+    background-color: rgb(29, 29, 29);
+    padding: 6px 0px;
+    position: sticky;
+    top: 0%;
+    z-index: 5;
+    border-bottom: 1px solid $color-primario;
+
+    .nav {
+
+        padding: 0px 0.5rem;
+
+        &__logo {
+            width: 180px;
+        }
+
+        .activo {
+            color: $color-primario;
+            border-bottom: 1px solid $color-primario;
+
+            @include mobile-lg {
+                border: none;
+            }
+        }
+
+        &-link {
+            color: #ffffff;
+            border-bottom: 1px solid $color-terceario;
+
+            &:hover {
+                color: $color-primario;
+            }
+
+            @include mobile-lg {
+                border: none;
+            }
+        }
+
+        &__menu {
+            padding: 5px;
+            background-color: $color-secundario;
+            border: none;
+
+            @include mobile-lg {
+                display: none;
+            }
+        }
+
+    }
+}

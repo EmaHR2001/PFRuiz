@@ -1,0 +1,17 @@
+@import "./utils/variables";
+@import "./utils/mixin";
+
+@import "./base/base";
+@import "./base/tipografias";
+
+@import "./components/navbar";
+@import "./components/carrousel";
+@import "./components/spam";
+@import "./components/footer";
+@import "./components/botones";
+
+@import "./pages/index";
+@import "./pages/desarrolladoras";
+@import "./pages/guias";
+@import "./pages/noticias";
+@import "./pages/unete";

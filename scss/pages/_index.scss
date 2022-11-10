@@ -1,0 +1,142 @@
+.ofert {
+
+    &__container {
+        @include mobile-md {
+            display: flex;
+        }
+    }
+
+    &__article {
+        padding: 0;
+        height: 100%;
+
+        @include mobile-md {
+            text-align: center;
+            width: 50%;
+        }
+
+        &__visual {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            @include mobile-md {
+                margin: auto;
+                justify-content: center;
+                height: 260px;
+                width: 90%;
+            }
+
+            .ofert__view {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+
+                &__img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &__etiquet {
+                    position: absolute;
+                    background-color: $color-primario;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    bottom: 0;
+                    height: 30px;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+
+            .frente {
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px #000;
+            }
+
+            .espalda {
+                transform: perspective(600px) rotateY(180deg);
+                background-color: #181818;
+                color: #f2941f;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+                i {
+                    font-size: 3rem;
+                    margin: 20px;
+                }
+
+                a {
+                    color: white;
+                    border-top: 1px solid white;
+                    padding-top: 10px;
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                }
+            }
+
+            &:hover .frente {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            &:hover .espalda {
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+
+    &__info {
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+}
+
+.sub {
+    margin-bottom: 1rem;
+
+    @include mobile-md {
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0;
+        max-width: 500px;
+    }
+
+    &__content {
+        background-color: $color-sub;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+
+        @include mobile-md {
+            background-color: #181818;
+        }
+
+        &__img {
+            width: 70%;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin: 10px 0px;
+
+            @include mobile-md {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__img {
+        @include mobile-md {
+            width: 50%;
+        }
+    }
+}
