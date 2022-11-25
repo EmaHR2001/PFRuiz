@@ -1,0 +1,14 @@
+.publicidad {
+    position: relative;
+    margin-bottom: 10px;
+    img {
+        width: 100%;
+    }
+    p {
+        position: absolute;
+        background-color: #181818b9;
+        padding: 5px;
+        bottom: 0;
+        margin: 0;
+    }
+}

@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8c7ff1173b.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/png" href="img/logo_white_mini.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/logo_white_mini.png" />
     <!-- CUSTOM CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Bienvenido a Indiegames</title>
-    <meta name="description" content="Todas las novedades, noticias y ultimas ofertas del mundo indie de los videojuegos.">
+    <meta name="description"
+        content="Todas las novedades, noticias y ultimas ofertas del mundo indie de los videojuegos.">
 </head>
+
 <body>
     <header class="navbar navbar-expand-lg">
-        <nav class="nav container">
+        <nav class="nav">
             <img class="nav__logo" src="img/logo_white.png" alt="logo de indiegames">
-            <button class="nav__menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="nav__menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-caret-down"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-md-end" id="navbarText">
@@ -43,7 +48,7 @@
 
     <h1>IndieGames / juegos indie noticias / ofertas / videojuegos </h1>
 
-    <main>
+    <main class="">
 
         <div id="carousel__principal" class="carousel slide" data-bs-ride="false">
 
@@ -60,34 +65,29 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/hades_c_mobile.jpg" class="carousel-item__img d-sm-none" alt="banner de hades">
-                    <img src="./img/hades2.jpg" class="carousel-item__img d-none d-sm-inline-block"
-                        alt="banner de hades">
+                    <img src="./img/hades__banner.jpg" class="carousel-item__img" alt="banner de hades">
                     <div class="carousel__info">
-                        <img class="carousel__info__logo" src="./img/hades_banner.png" alt="logo de hades">
+                        <img class="carousel__info__logo" src="./img/hades__logo.png" alt="logo de hades">
                         <p class="tracking-in-expand">Descubre el nuevo dios agregado en el nuevo dlc de Hades.</p>
-                        <button class="boton__base pulsa">VER MAS</button>
+                        <button class="boton__carousel ff-kenya">VER MAS</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/celeste_c_mobile.jpg" class="carousel-item__img d-sm-none" alt="banner de celeste">
-                    <img src="./img/celeste__banner.jpg" class="carousel-item__img d-none d-sm-inline-block"
-                        alt="banner de celeste">
+                    <img src="./img/dead-cells__banner.jpg" class="carousel-item__img" alt="banner de dead cells">
                     <div class="carousel__info">
-                        <img class="carousel__info__logo" src="./img/celeste.png" alt="logo de celeste">
-                        <p class="tracking-in-expand">Sigue esta nueva guia de Celeste para superar los niveles en tiempo record.</p>
-                        <button class="boton__base pulsa">VER MAS</button>
+                        <img class="carousel__info__logo" src="./img/dead-cells__logo.png" alt="logo de celeste">
+                        <p class="tracking-in-expand">Nuevo colaboración de indies. Descubre que a llegado a Dead Cells.
+                        </p>
+                        <button class="boton__carousel ff-kenya">VER MAS</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/hollow_c_mobile.jpg" class="carousel-item__img d-sm-none"
-                        alt="banner de hollow knight">
-                    <img src="./img/hollow.jpg" class="carousel-item__img d-none d-sm-inline-block"
-                        alt="banner de hollow knight">
+                    <img src="./img/hollow-knight__banner.jpg" class="carousel-item__img" alt="banner de hollow knight">
                     <div class="carousel__info">
-                        <img class="carousel__info__logo" src="./img/hollow_banner.png" alt="logo de hollow knight">
-                        <p class="tracking-in-expand">Mientras esperabas que nunca llegue Silk Song juega Hollow Knight por cuartodecima vez.</p>
-                        <button class="boton__base pulsa">VER MAS</button>
+                        <img class="carousel__info__logo" src="./img/hollow__logo.png" alt="logo de hollow knight">
+                        <p class="tracking-in-expand">Mientras esperabas que nunca llegue Silk Song juega Hollow Knight
+                            por cuarto décima vez.</p>
+                        <button class="boton__carousel ff-kenya">VER MAS</button>
                     </div>
                 </div>
             </div>
@@ -105,150 +105,314 @@
 
         </div>
 
-        
+        <div class="cuerpo">
+            <div class="contenedor">
+                <section class="index__new">
+                    <h2><span class="ff-kenya">Ultimas Noticias</span></h2>
 
-        <section class="ofert container">
-            <h2>Ultimas ofertas</h2>
-
-            <div class="ofert__container justify-content-md-between">
-
-                <article class="ofert__article">
-                    <div class="ofert__article__visual">
-                        <div class="ofert__view frente">
-                            <img class="ofert__view__img" src="img/hollow.jpg" alt="oferta de Hollow Knight">
-                            <p class="ofert__view__etiquet">20% de Descuento</p>
-                        </div>
-                        <div class="ofert__view espalda">
-                            <i class="fa-brands fa-steam"></i>
-                            <a class="">Ir Ahora</a>
-                        </div>
+                    <div class="index__new__content">
+                        <article class="newp__article">
+                            <a class="enlace__img"><img src="img/castle__guia.jpg" alt=""></a>
+                            <div class="info">
+                                <h3 class="ff-kenya titulo">
+                                    Lorem ipsum, dolor sit amet consectetur.
+                                </h3>
+                                <a><span>NOTICIA</span><i class="fa-solid fa-share"></i>21 de octubre</a>
+                                <p class="d-none d-md-block">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempore autem
+                                    asperiores ipsa quaerat unde rem dolorum? Odit consectetur dolorum facere tenetur
+                                    animi reprehenderit iste? Sint aliquam esse quisquam sapiente!
+                                </p>
+                            </div>
+                        </article>
+                        <article class="newp__article">
+                            <a class="enlace__img"><img src="img/celeste__guia.jpg" alt=""></a>
+                            <div class="info">
+                                <h3 class="ff-kenya">
+                                    Lorem ipsum, dolor sit amet consectetur.
+                                </h3>
+                                <a><span>DESARROLLADORAS</span><i class="fa-solid fa-share"></i>21 de octubre</a>
+                            </div>
+                        </article>
+                        <article class="newp__article">
+                            <a class="enlace__img"><img src="img/shovel__guia.jpg" alt=""></a>
+                            <div class="info">
+                                <h3 class="ff-kenya">
+                                    Lorem ipsum, dolor sit amet consectetur.
+                                </h3>
+                                <a><span>ACTUALIZACION</span><i class="fa-solid fa-share"></i>21 de octubre</a>
+                            </div>
+                        </article>
+                        <article class="newp__article">
+                            <a class="enlace__img"><img src="img/cells__guia.jpg" alt=""></a>
+                            <div class="info">
+                                <h3 class="ff-kenya">
+                                    Lorem ipsum, dolor sit amet consectetur.
+                                </h3>
+                                <a><span>GUIA</span><i class="fa-solid fa-share"></i>21 de octubre</a>
+                            </div>
+                        </article>
+                        <article class="newp__article">
+                            <a class="enlace__img"><img src="img/hades__guia.jpg" alt=""></a>
+                            <div class="info">
+                                <h3 class="ff-kenya">
+                                    Lorem ipsum, dolor sit amet consectetur.
+                                </h3>
+                                <a><span>GUIA</span><i class="fa-solid fa-share"></i>21 de octubre</a>
+                            </div>
+                        </article>
+                        <article class="newp__article">
+                            <a class="enlace__img"><img src="img/blasphemus__guia.jpg" alt=""></a>
+                            <div class="info">
+                                <h3 class="ff-kenya">
+                                    Lorem ipsum, dolor sit amet consectetur.
+                                </h3>
+                                <a><span>GUIA</span><i class="fa-solid fa-share"></i>21 de octubre</a>
+                            </div>
+                        </article>
                     </div>
-                    <p class="ofert__article__info">Hollow Knight con 20% en steam hasta el 13/13 en steam.</p>
-                </article>
-    
-                <article class="ofert__article">
-                    <div class="ofert__article__visual">
-                        <div class="ofert__view frente">
-                            <img class="ofert__view__img" src="img/blasphemus__guia.jpg" alt="oferta de blasphemus">
-                            <p class="ofert__view__etiquet">90% de Descuento</p>
-                        </div>
-                        <div class="ofert__view espalda">
-                            <i class="fa-brands fa-steam"></i>
-                            <a class="">Ir Ahora</a>
-                        </div>
-                    </div>
-                    <p class="ofert__article__info">Blasphemus con 90% en steam hasta el 4/4 en steam.</p>
-                </article>
 
+                </section>
+
+                <section class="publicidad d-md-none">
+                    <a><img src="img/cocacola.png" alt=""></a>
+                    <p>Espacio Publicitario</p>
+                </section>
+
+                <section class="ofert">
+                    <h2><span class="ff-kenya">Ultimas Ofertas</span></h2>
+                    <section class="ofert__content">
+                        <div class="ofert__card">
+                            <div class="visual">
+                                <img src="img/R.png" alt="">
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="info">
+                                <h3 class="ff-kenya">Oferta de 30%</h3>
+                                <p>Aprovecha esta oferta y consigue Hades con un 30% de descuento. Disponible hasta el
+                                    30/12.
+                                </p>
+                                <button>Ir Ahora<i class="fa-brands fa-steam"></i></button>
+                            </div>
+                        </div>
+                        <div class="ofert__card">
+                            <div class="visual">
+                                <img src="img/celesteofert.png" alt="">
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="info">
+                                <h3 class="ff-kenya">Oferta de 70%</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                                <button>Ir Ahora<i class="fa-brands fa-steam"></i></button>
+                            </div>
+                        </div>
+                        <div class="ofert__card">
+                            <div class="visual">
+                                <img src="img/deadcellsofert.png" alt="">
+                                <div class="img__back"></div>
+                            </div>
+                            <div class="info">
+                                <h3 class="ff-kenya">Oferta de 20%</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                                <button>Ir Ahora<i class="fa-brands fa-steam"></i></button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section class="index__guia">
+                    <h2><span class="ff-kenya">Ultimas Guías</span></h2>
+                    <article class="guia__articulo pulsa">
+                        <a href=""><img class="" src="./img/post__silksong.jpg" alt="imagen de guia de shovel"></a>
+                        <div class="guia__info">
+                            <p class="mb-0">Hace 2 dias</p>
+                            <p class="mb-0">Como superar...</p>
+                        </div>
+                    </article>
+                    <article class="guia__articulo pulsa">
+                        <a href=""><img class="" src="../img/shovel__guia.jpg" alt="imagen de guia de shovel"></a>
+                        <div class="guia__info">
+                            <p class="mb-0">Hace 2 dias</p>
+                            <p class="mb-0">Como superar...</p>
+                        </div>
+                    </article>
+                    <article class="guia__articulo pulsa">
+                        <a href=""><img class="" src="../img/shovel__guia.jpg" alt="imagen de guia de shovel"></a>
+                        <div class="guia__info">
+                            <p class="mb-0">Hace 2 dias</p>
+                            <p class="mb-0">Como superar...</p>
+                        </div>
+                    </article>
+                </section>
             </div>
 
-        </section>
+            <div class="lateral d-none d-lg-block">
+                <section class="lateral__follow">
+                    <h2><span class="ff-kenya">Síguenos</span></h2>
 
-        <section class="new container">
-            <h2>Ultimas noticias</h2>
+                    <div class="redes">
+                        <a href="">
+                            <img src="img/icon_facebook.png" alt="">
+                        </a>
+                        <p class="ff-kenya"> IndieGames<span class="ff-kenya"> 23k followers</span></p>
+                    </div>
+                    <div class="redes">
+                        <a href="">
+                            <img src="img/icon_youtube.png" alt="">
+                        </a>
+                        <p class="ff-kenya">IndieGameplays<span class="ff-kenya"> 45.3k subs</span></p>
+                    </div>
+                    <div class="redes">
+                        <a href="">
+                            <img src="img/icon_instagram.png" alt="">
+                        </a>
+                        <p class="ff-kenya">IndieNews <span class="ff-kenya"> 780k followers</span></p>
+                    </div>
+                    <div class="redes">
+                        <a href="">
+                            <img src="img/icon_twitch.png" alt="">
+                        </a>
+                        <p class="ff-kenya">IndieGameplays<span class="ff-kenya"> 43k subs</span></p>
+                    </div>
+                    <div class="redes">
+                        <a href="">
+                            <img src="img/icon_twitter.png" alt="">
+                        </a>
+                        <p class="ff-kenya">IndieFlashNews <span class="ff-kenya"> 88k reetwets</span></p>
+                    </div>
+                </section>
 
-            <article class="new__article d-md-flex pb-md-3 ">
-                <img class="new__article__img" src="img/gungeon.jpg" alt="imagen de noticia de enter the gungeon">
-                
-                <div class="new__article__info ps-md-3">
-                    <p>Nueva guia</p>
-                    <h3>Consigue todas las armas en de la Armazmorra</h3>
-                    <p class="d-none d-md-block">Visita esta nueva guia de enter the gungeon y descubre como desbloquear las cientos de armas.</p>
-                    <a class="d-none d-md-inline-block">Leer mas</a>
+                <section class="lateral__publicidad">
+                    <img src="img/coca cola2.jpg" alt="">
+                    <p>Publicidad</p>
+                </section>
+
+                <div class="lateral__sub">
+                    <h2><span class="ff-kenya">Únete</span></h2>
+                    <section class="sub__lateral">
+                        <img class="sub__lateral__logo img-fluid" src="./img/logo_white3.png"
+                            alt="oferta de Hollow Knight">
+                        <p class="ff-kenya">Únete a IndieGames y recibe novedades de guías directamente a tu correo.</p>
+                        <form class="form">
+                            <div class="form__div">
+                                <input class="form__div__input" name="fname" type="text" id="nombre" placeholder=" " required>
+                                <label for="nombre" class="form__div__label">Nombre</label>
+                            </div>
+                            <div class="form__div">
+                                <input class="form__div__input" name="lname" type="text" id="apellido" placeholder=" " required>
+                                <label for="apellido" class="form__div__label">Apellido</label>
+                            </div>
+                            <div class="form__div">
+                                <input class="form__div__input" name="correo" type="text" id="email" placeholder=" " required>
+                                <label for="email" class="form__div__label">Email</label>
+                            </div>
+
+                            <input class="boton__unete pulsa" name="eboton" type="submit" value="Enviar">
+
+                        </form>
+                        <a class="more">Mas informacion aqui.</a>
+                    </section>
                 </div>
-            </article>
 
-            <article class="new__article d-md-flex pb-md-3">
-                <img class="new__article__img" src="img/cult_of_the_lamb.jpg" alt="imagen de noticia de cult of the lamb">
-                
-                <div class="new__article__info ps-md-3">
-                    <p>Nueva guia</p>
-                    <h3>Crea tu propio culto en Cult of the Lamb</h3>
-                    <p class="d-none d-md-block">Descubre como tener a tu secta feliz y manipulable para evitar un motin con esta nueva guia.</p>
-                    <a class="d-none d-md-inline-block">Leer mas</a>
-                </div>
-            </article>
-
-            <article class="new__article d-md-flex pb-md-3">
-                <img class="new__article__img" src="img/record__cuphead.jpg" alt="imagen de noticia de cuphead">
-                
-                <div class="new__article__info ps-md-3">
-                    <p>Noticia</p>
-                    <h3>Nuevo record de tiempo en Cuphead</h3>
-                    <p class="d-none d-md-block">Nuevo record speedrun en Cuphead esta semana, descubre quien es y como lo a conseguido.</p>
-                    <a class="d-none d-md-inline-block">Leer mas</a>
-                </div>
-            </article>
-
-        </section>
-
-        <section class="sub d-inline-block d-sm-flex container-sm">
-
-            <div class="sub__content">
-                <img class="sub__content__img d-md-none" src="img/logo_white2.png" alt="oferta de Hollow Knight">
-                <img class="sub__content__img d-none d-md-inline-block" src="img/logo_white3.png">
-                <p>Unete a indiegames y recibe notificaciones de las ultimas noticias directamente a tu correo electronico.</p>
-                <button class="pulsa boton__unete">Unete</button>
+                <section class="lateral__dest">
+                    <h2><span class="ff-kenya">Post Destacados</span></h2>
+                    <div class="dest__content">
+                        <article class="dest__article">
+                            <a class="enlace__img"><img src="./img/post__indies.jpg" alt=""></a>
+                            <div class="info">
+                                <h4 class="ff-kenya">
+                                    Top 10 nuevos juegos indie para PC...
+                                </h4>
+                                <p>10/11/22</p>
+                            </div>
+                        </article>
+                        <article class="dest__article">
+                            <a class="enlace__img"><img src="./img/post__premio.jpg" alt=""></a>
+                            <div class="info">
+                                <h4 class="ff-kenya">
+                                    Estos son los juegos nominados a...
+                                </h4>
+                                <p>17/10/22</p>
+                            </div>
+                        </article>
+                        <article class="dest__article">
+                            <a class="enlace__img"><img src="./img/post__silksong.jpg" alt=""></a>
+                            <div class="info">
+                                <h4 class="ff-kenya">
+                                    Silksong confirma su lanzamiento...
+                                </h4>
+                                <p>18/11/22</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
             </div>
-            <img class="sub__img d-none d-md-block" src="img/cult-of-the-lamb.jpg" alt="imagen de noticia de cult of the lamb">
-
-        </section>
+        </div>
 
     </main>
 
-    <footer class="footer row justify-content-md-between">
+    <footer class="footer mt-4">
 
-        <div class="footer__div col-md-4 p-md-2 mb-3">
-            <img class="footer__logo" src="img/logo_white.png" alt="">
-            <p class="footer__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus facere asperiores accusantium fugiat veniam, odio blanditiis accusamus facilis similique sint suscipit. Quis ducimus, labore deleniti in numquam facilis, at deserunt, magnam fugit ullam ipsum voluptatem amet voluptatibus dolor ex esse?
-            </p>
-            <h4>Redes sociales</h4>
-            <div class="footer__icons">
-                <i class="fa-brands fa-square-twitter pulsa"></i>
-                <i class="fa-brands fa-square-instagram pulsa"></i>
-                <i class="fa-brands fa-square-facebook pulsa"></i>
+        <nav class="footer__nav d-flex">
+            <ul class="d-md-flex">
+                <li><a class="ff-kenya" href="">Inicio</a></li>
+                <li><a class="ff-kenya" href="">Noticias</a></li>
+                <li><a class="ff-kenya" href="">Desarrolladoras</a></li>
+                <li><a class="ff-kenya" href="">Guias</a></li>
+                <li><a class="ff-kenya" href="">Unete</a></li>
+            </ul>
+        </nav>
+
+        <section class="footer__follow d-none d-md-inline-flex">
+            <h3 class="ff-kenya">SÍGUENOS</h3>
+            <div class="icons">
+                <a href="">
+                    <img src="img/icon_facebook.png" alt="">
+                </a>
             </div>
-        </div>
-
-        <div class="footer__nav col-md-4">
-            <h4>Navegacion</h4>
-            <nav class="nav__footer">
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Noticias</a></li>
-                    <li><a href="">Desarrolladoras</a></li>
-                    <li><a href="">Guias</a></li>
-                    <li><a href="">Unete</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="footer__div col-md-4">
-            <h4>Contacto</h4>
-            <div class="footer__contact">
-                <div class="footer__info">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>666-666-666-666</p>
-                </div>
-                <div class="footer__info">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>Dalequesonpasteles@hotmail.com</p>
-                </div>
-                <div class="footer__info">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Gotham City</p>
-                </div>
+            <div class="icons">
+                <a href="">
+                    <img src="img/icon_instagram.png" alt="">
+                </a>
             </div>
-        </div>
-
-        <section class="footer__bajo">
-            <h5>Diseño by EMANUEL RUIZ</h5>
-            <img class="footer__logo2 d-none d-md-block" src="img/logo_white2.png" alt="">
+            <div class="icons">
+                <a href="">
+                    <img src="img/icon_twitch.png" alt="">
+                </a>
+            </div>
+            <div class="icons">
+                <a href="">
+                    <img src="img/icon_twitter.png" alt="">
+                </a>
+            </div>
+            <div class="icons">
+                <a href="">
+                    <img src="img/icon_youtube.png" alt="">
+                </a>
+            </div>
         </section>
+
+        <div class="footer__img">
+            <img class="footer__img__logo" src="img/logo_white2.png" alt="">
+        </div>
+
+        <div class="footer__info">
+            <div class="politic d-flex">
+                <a class="" href="">POLITICAS DE PRIVACIDAD</a>
+                <a class="" href="">DOCUMENTOS LEGALES</a>
+            </div>
+
+            <div class="info">
+                <p>©2022 IndieGames. Reservados todos los derechos. Todas las marcas comerciales son propiedad de sus
+                    respectivos dueños.</p>
+            </div>
+        </div>
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

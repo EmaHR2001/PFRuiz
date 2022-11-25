@@ -1,0 +1,183 @@
+.lateral {
+    margin-left: 20px;
+
+    &__follow {
+        .redes {
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+            text-align: center;
+    
+            a {
+                width: 35px;
+                height: 35px;
+                overflow: hidden;
+    
+                img {
+                    width: 100%;
+                    height: 200%;
+                    transition: transform .5s;
+                }
+    
+                &:hover img {
+                    transform: translateY(-35px);
+                }
+            }
+    
+            p {
+                font-size: 1.2rem;
+                margin: 0;
+                margin-left: 10px;
+    
+                span {
+                    color: $color-primario;
+                }
+            }
+    
+        }
+    }
+
+    &__publicidad {
+        position: relative;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 20px;
+    
+        img {
+            width: 100%;
+        }
+    
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            background-color: #1818189a;
+            font-size: 0.7rem;
+            padding: 2px 10px;
+        }
+    }
+    
+    &__sub {
+        margin-top: 20px;
+    
+        .sub__lateral {
+            padding: 10px;
+            background-color: #0f0f0f;
+            text-align: center;
+            border: 1px solid white;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+    
+            p {
+                font-size: 1.5rem;
+            }
+    
+            .form {
+    
+                &__div {
+                    position: relative;
+                    margin-top: 27px;
+    
+                    &__label {
+                        position: absolute;
+                        top: 2px;
+                        left: 10px;
+                        color: $color-terceario;
+                        font-size: 1rem;
+                        background-color: transparent;
+                    }
+    
+                    &__input {
+                        outline: none;
+                        border: none;
+                        background-color: transparent;
+                        border-bottom: 1px solid #ffffff;
+                        border-left: 1px solid #ffffff;
+                        border-top: 1px solid transparent;
+                        border-right: 1px solid transparent;
+                        padding: 2px 5px;
+                        width: 100%;
+    
+                        &:not(:placeholder-shown)+.form__div__label {
+                            transition: top .9s, left .9s, background .9s;
+                            font-size: 0.8rem;
+                            color: #ffffff;
+                            background-color: #ec1c23;
+                            left: 70%;
+                            top: -15px;
+                            padding: 1px 10px;
+                        }
+    
+                        &:not(:placeholder-shown) {
+                            transition: border .5s;
+                            border: 1px solid #ec1c23;
+                            background-color: #0f0f0f;
+                        }
+                    }
+                }
+    
+                &__text {
+                    font-size: 1rem;
+                    margin: 10px 0px 5px;
+                }
+    
+                .boton__unete {
+                    margin-top: 30px;
+                }
+    
+            }
+
+            .more {
+                color: #ffffff;
+                border-bottom: 1px solid #ffffff;
+                &:hover {
+                    color: #ec1c23;
+                    border-bottom: 1px solid #ec1c23;
+                }
+            }
+        }
+    }
+
+    &__dest {
+        margin-top: 10px;
+        .dest__content {
+            margin-top: 10px;
+
+            .dest__article {
+                display: flex;
+                height: 80px;
+                margin-bottom: 10px;
+
+                .enlace__img {
+                    width: 120px;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+                        &:hover {
+                            opacity: calc(0.7);
+                        }
+                    }
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: 10px;
+                    h4 {
+                        font-size: 1.3rem;
+                    }
+                    p {
+                        font-size: .8rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

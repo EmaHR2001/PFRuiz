@@ -1,17 +1,48 @@
 .boton {
 
-    &__base {
-        font-size: 0.9rem;
-        padding: 5px 10px;
-        border-radius: 5px;
-        border: none;
-        border: 1px solid transparent;
-        background-color: rgb(46, 46, 46);
+    &__carousel {
+        display: inline-block;
+        padding: 1px 20px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #ffffff;
+        transition: color .5s;
+        transition: border .5s;
+        z-index: 1;
+        font-size: 1.5rem;
+        border-radius: 6px;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: $color-secundario;
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background-color: $color-primario;
+            height: 150px;
+            width: 200px;
+            border-radius: 50%;
+        }
 
         &:hover {
-            color: $color-primario;
             border: 1px solid $color-primario;
-            background-color: rgb(18, 18, 18);
+            color: $color-secundario;
+        }
+
+        &:before {
+            top: 100%;
+            left: 100%;
+            transition: all .7s;
+        }
+
+        &:hover:before {
+            top: -30px;
+            left: -30px;
+        }
+
+        &:active:before {
+            transition: background 0s;
         }
     }
 
@@ -28,14 +59,14 @@
     }
 
     &__category {
+        width: 100%;
         background-color: #181818;
+        text-align: left;
+        padding: 5px;
         border: $linea-gris;
-        padding: 5px 40px;
-        border-radius: 5px;
-        margin: 5px 5px 0px 0px;
 
-        @include mobile-md {
-            padding: 5px 15px;
+        &:hover {
+            background-color: #222222;
         }
     }
 
@@ -44,10 +75,11 @@
         border: $linea-gris;
         padding: 5px 10px;
         border-radius: 5px;
-        margin: 0px 5px 20px 0px;
+        margin: 0px 5px 10px 0px;
 
         &:hover {
-            background-color: $color-primario;
+            background-color: #222222;
         }
     }
+
 }

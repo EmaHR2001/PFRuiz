@@ -1,5 +1,15 @@
-.ff-inter {
-    font-family: "inter",sans-serif;
+@font-face {
+    font-family: "inter";
+    src: url(../font/inter.ttf);
+}
+
+@font-face {
+    font-family: "kenya";
+    src: url(../font/kenya.ttf);
+}
+
+.ff-kenya {
+    font-family: 'kenya';
 }
 
 h1 {
@@ -11,7 +21,15 @@ a {
 }
 
 h2 {
-    font-size: 1.2rem;
-    border-bottom: $linea-gris;
-    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    margin-bottom: 0;
+
+    span {
+        font-size: 1.5rem;
+        background-color: #fff;
+        display: inline-block;
+        margin: 0;
+        padding: 3px;
+        color: $color-secundario;
+    }
 }

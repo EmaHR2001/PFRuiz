@@ -15,8 +15,8 @@
 
 <body>
     <header class="navbar navbar-expand-lg">
-        <nav class="nav container">
-            <img class="nav__logo" src="../img/logo_white.png" alt="logo de indiegames">
+        <nav class="nav">
+            <img class="nav__logo" src="../img/logo_white.png" alt="logo de Indiegames">
             <button class="nav__menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-caret-down"></i>
             </button>
@@ -29,7 +29,7 @@
                         <a class="nav-link activo" href="./noticias.html">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./guias.html">Guias</a>
+                        <a class="nav-link" href="./guias.html">Guías</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./desarrolladoras.html">Desarrolladoras</a>
@@ -61,34 +61,29 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/hades_c_mobile.jpg" class="carousel-item__img d-sm-none" alt="banner de hades">
-                    <img src="../img/hades2.jpg" class="carousel-item__img d-none d-sm-inline-block"
-                        alt="banner de hades">
+                    <img src="../img/hades__banner.jpg" class="carousel-item__img" alt="banner de hades">
                     <div class="carousel__info">
-                        <img class="carousel__info__logo" src="../img/hades_banner.png" alt="logo de hades">
+                        <img class="carousel__info__logo" src="../img/hades__logo.png" alt="logo de hades">
                         <p class="tracking-in-expand">Descubre el nuevo dios agregado en el nuevo dlc de Hades.</p>
-                        <button class="boton__base pulsa">VER MAS</button>
+                        <button class="boton__carousel ff-kenya">VER MAS</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/celeste_c_mobile.jpg" class="carousel-item__img d-sm-none" alt="banner de celeste">
-                    <img src="../img/celeste__banner.jpg" class="carousel-item__img d-none d-sm-inline-block"
-                        alt="banner de celeste">
+                    <img src="../img/dead-cells__banner.jpg" class="carousel-item__img" alt="banner de dead cells">
                     <div class="carousel__info">
-                        <img class="carousel__info__logo" src="../img/celeste.png" alt="logo de celeste">
-                        <p class="tracking-in-expand">Sigue esta nueva guia de Celeste para superar los niveles en tiempo record.</p>
-                        <button class="boton__base pulsa">VER MAS</button>
+                        <img class="carousel__info__logo" src="../img/dead-cells__logo.png" alt="logo de celeste">
+                        <p class="tracking-in-expand">Nuevo colaboración de indies. Descubre que a llegado a Dead Cells.
+                        </p>
+                        <button class="boton__carousel ff-kenya">VER MAS </button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/hollow_c_mobile.jpg" class="carousel-item__img d-sm-none"
-                        alt="banner de hollow knight">
-                    <img src="../img/hollow.jpg" class="carousel-item__img d-none d-sm-inline-block"
-                        alt="banner de hollow knight">
+                    <img src="../img/hollow-knight__banner.jpg" class="carousel-item__img" alt="banner de hollow knight">
                     <div class="carousel__info">
-                        <img class="carousel__info__logo" src="../img/hollow_banner.png" alt="logo de hollow knight">
-                        <p class="tracking-in-expand">Mientras esperabas que nunca llegue Silk Song juega Hollow Knight por cuartodecima vez.</p>
-                        <button class="boton__base pulsa">VER MAS</button>
+                        <img class="carousel__info__logo" src="../img/hollow__logo.png" alt="logo de hollow knight">
+                        <p class="tracking-in-expand">Mientras esperabas que nunca llegue Silk Song juega Hollow Knight
+                            por cuarto décima vez.</p>
+                        <button class="boton__carousel ff-kenya">VER MAS</button>
                     </div>
                 </div>
             </div>
@@ -106,260 +101,361 @@
 
         </div>
 
-        <div class="categorys container d-flex d-lg-none">
+        <div class="cuerpo">
+            <div class="contenedor">
+                <section class="new">
+                    <h2><span class="ff-kenya">Ultimas noticias</span></h2>
 
-            <h3>Categorias:</h3>
-
-            <div class="boton" role="group">
-                <button type="button" class="boton__category" data-bs-toggle="dropdown" aria-expanded="false">
-                    Seleccionar
-                </button>
-                <ul class="dropdown-menu">
-                    <p class="dropdown-item">General</p>
-                    <li><a class="dropdown-item" href="#">Actualizaciones</a></li>
-                    <li><a class="dropdown-item" href="#">Industria</a></li>
-                    <li><a class="dropdown-item" href="#">Novedades</a></li>
-                    <li><a class="dropdown-item" href="#">Ofertas</a></li>
-                    <p class="dropdown-item">Desarrolladoras</p>
-                    <li><a class="dropdown-item" href="#">StudioMDHR</a></li>
-                    <li><a class="dropdown-item" href="#">Team Cherry</a></li>
-                    <li><a class="dropdown-item" href="#">Supergiant</a></li>
-                    <li><a class="dropdown-item" href="#">Coffe Stain</a></li>
-                    <p class="dropdown-item">Generos</p>
-                    <li><a class="dropdown-item" href="#">Lucha</a></li>
-                    <li><a class="dropdown-item" href="#">Pixel Art</a></li>
-                    <li><a class="dropdown-item" href="#">Metroidvania</a></li>
-                    <li><a class="dropdown-item" href="#">Roguelike</a></li>
-                </ul>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__stray.jpg" alt="Noticia de Stray"></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">NOTICIA</a>
+                            <h3 class="ff-kenya titulo">
+                                'Stray' demuestra que gatitos más ciencia-ficción no es la combinación perfecta, pero se acerca bastante.
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Oscar Isaac<i class="fa-solid fa-share"></i>25 de noviembre</a>
+                            <p class="d-none d-md-block mb-5">
+                                Me pregunto en qué medida puede resultar atractivo un juego como 'Stray' a alguien que no le interesen los gatos, pero en cualquier caso, tendréis que buscar a esa persona y preguntarle, porque (a modo de disclaimer) me confieso devoto de los felinos...
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__loophero.jpg" alt="Noticia de Loop Hero"></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">NOTICIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">PIXEL ART</a>
+                            <h3 class="ff-kenya titulo">
+                                El juego indie 'Loop Hero' se ha convertido en uno de los mayores éxitos inesperados de 2022.
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Hugo Torres<i class="fa-solid fa-share"></i>23 de noviembre</a>
+                            <p class="d-none d-md-block mb-5">
+                                Estamos viviendo un boom de juegos independientes en lo que llevamos de 2022 como pocas veces antes habíamos experimentado. Y lo más importante: le están quitando espacio a los AAA, aprovechando que estos están en un momento de impasse y aún no han empezado a llegar grandes títulos de las nuevas consolas.
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__westerado.jpg" alt="Noticia de Westerado"></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">NOTICIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">PIXEL ART</a>
+                            <h3 class="ff-kenya titulo">
+                                Mi juego favorito de Game Pass en Xbox es Westerado: un indie con pixelazos y excelente ambientación.
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Thiago Muñoz<i class="fa-solid fa-share"></i>20 de noviembre</a>
+                            <p class="d-none d-md-block mb-5">
+                                Me he pasado las tres o cuatro tardes que he tardado en completar 'Westerado' (dura unas dos horas y media o tres relajadas, aunque si jugueteas con los extras, la cosa se te puede ir a más de diez) hipnotizado por su estilo gráfico. Su delicioso pixel-art me ha tenido absolutamente...
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__silksong.jpg" alt="Noticia de Silksong"></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">NOTICIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">AVENTURA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">INDUSTRIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">LANZAMIENTO</a>
+                            <h3 class="ff-kenya titulo">
+                                Hollow Knight: Silksong confirma su lanzamiento en PS5 y PS4
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Oscar Isaac<i class="fa-solid fa-share"></i>18 de noviembre</a>
+                            <p class="d-none d-md-block mb-5">
+                                Hollow Knight: Silksong es uno de los juegos más esperados año tras año, sin embargo sus responsables, el estudio independiente Team Cherry, todavía no ha desvelado su fecha de lanzamiento. Eso no quita que de vez en cuando vayamos conociendo nueva información del proyecto: ahora se ha confirmado oficialmente que llegará a consolas PlayStation, lo que significa que podremos jugarlo tanto en PS5 como en PS4.
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__naritaboy.jpg" alt="Noticia de Narita Boy"></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">OFERTA</a>
+                            <h3 class="ff-kenya titulo">
+                                Una joya indie desarrollada en España que puedes conseguir 100% gratis para tu PC... solo hasta el 25 de noviembre
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Marcos Cortez<i class="fa-solid fa-share"></i>12 de noviembre</a>
+                            <p class="d-none d-md-block mb-5">
+                                Siempre es un placer conseguir juegos 100% gratis. Es algo a lo que estamos acostumbrados gracias a Epic Games Store, Steam, servicios de suscripción o incluso GOG. La plataforma de juegos de CD Projekt para PC tiene otra gran sorpresa reservada para ti. Con motivo del Black Friday 2022...
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__indies.jpg" alt="Noticia de los nuevos indies por salir."></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">NOTICIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">INDUSTRIA</a>
+                            <h3 class="ff-kenya titulo">
+                                Top 10 nuevos juegos indie para PC y Nintendo Switch (Indie World Noviembre 2022).
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Oscar Isaac<i class="fa-solid fa-share"></i>10 de noviembre</a>
+                            <p class="d-none d-md-block mb-5">
+                                Ayer 9 de noviembre de 2022 se emitió un Indie World con nuevos juegos indie que llegarán a Nintendo Switch a lo largo de lo que queda de año y principios de 2023. He recopilado 10 de estos juegos mostrados que tienen una temática más »cozy gaming» para mostraros juegos relajantes o bonitos que podremos jugar estos meses. Espero que os gusten mucho.
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__vrising.jpg" alt="Noticia de V Rising"></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">NOTICIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">ACTUALIZACIÓN</a>
+                            <h3 class="ff-kenya titulo">
+                                NUEVO CONTENIDO GRATUITO para V Rising. Nuevas decoraciones para este mes de Halloween.
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Nakamura Iyasaki<i class="fa-solid fa-share"></i>20 de octubre</a>
+                            <p class="d-none d-md-block mb-5">
+                                ¡No solo eso, sino que todos los jugadores de V Rising podrán reclamar el paqueteDLC gratuitoHaunted Nights Castle con temática de Halloween hasta el 7 de noviembre! Encontrarás todo tipo de decoraciones espeluznantes del castillo para guardar para siempre. Cubre tus castillos con membranas e ilumina tus pasillos oscuros con velas de calavera ahora y durante todo el año...
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__premio.jpg" alt="Noticia de los juegos nominados para los the game awards"></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">NOTICIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">INDUSTRIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">PREMIOS</a>
+                            <h3 class="ff-kenya titulo">
+                                Estos son los juegos nominados a Mejor Indie y Mejor Narrativa en los The Game Awards.
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Hugo Torres<i class="fa-solid fa-share"></i>17 de octubre</a>
+                            <p class="d-none d-md-block mb-5">
+                                Ahora conocemos los nominados a Mejor Indie y a Mejor Narrativa. Estamos en esa época del año en el que toca hacer balance de lo que ha ido saliendo a lo largo del mismo. Y es que 12 meses dan para mucho en el mundo de los videojuegos. Desde hace ya muchos años, distintos medios dan premios por...
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__loneruin.jpg" alt="Noticia de Lone Ruin"></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">NOTICIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">LANZAMIENTO</a>
+                            <h3 class="ff-kenya titulo">
+                                Lone Ruin es el proximo Super Rare Originals, que llegara tras los reyes.
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Peter Parker<i class="fa-solid fa-share"></i>16 de octubre</a>
+                            <p class="d-none d-md-block mb-5">
+                                Ya os hemos hablado de Super Rare Games en más de una ocasión, especialmente por sus lanzamientos físicos e varios títulos indie como Sally Face, FAST rmx o SteamWorld Quest, pero también por su línea Originals, juegos que ellos publican directamente en formato digital. Este movimiento comenzó con el más que notable Grapple Dog, que también recibió una versión física hace poco, y continúa ahora con LONE RUIN.
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="new__article">
+                        <a class="enlace__img"><img src="../img/post__somerville.jpg" alt="Noticia de Somerville"></a>
+                        <div class="info">
+                            <a class="ff-kenya etiqueta d-none d-md-inline">NOTICIA</a>
+                            <a class="ff-kenya etiqueta d-none d-md-inline">AVENTURA</a>
+                            <h3 class="ff-kenya titulo">
+                                'Somerville', la guerra de los mundos en silencio.
+                            </h3>
+                            <a class="data"><i class="fa-solid fa-user"></i>Peter Parker<i class="fa-solid fa-share"></i>12 de octubre</a>
+                            <p class="d-none d-md-block mb-5">
+                                Con el éxito de Inside (2016), una distopía sobre el control de pensamiento mucho más ambiciosa, el estudio danés Playdead se aseguró que lo suyo no había sido un encuentro fortuito con la genialidad, sino que tenía los mimbres para erigirse en un sello reconocido a nivel mundial.
+                            </p>
+                            <a class="more d-none d-md-block">Leer Mas<i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </article>
+                </section>
+                <div class=" mt-2">
+                    <button class="boton__num">1</button>
+                    <button class="boton__num">2</button>
+                    <button class="boton__num">3</button>
+                    <button class="boton__num">4</button>
+                    <button class="boton__num">5</button>
+                    <button class="boton__num">6</button>
+                    <button class="boton__num">7</button>
+                    <button class="boton__num">...</button>
+                    <button class="boton__num">+99</button>
+                </div>
             </div>
 
-        </div>
-
-        <div class="row container new">
-
-            <section class="new container col-lg-9">
-                <h2>Ultimas noticias</h2>
-    
-                <article class="new__article d-md-flex pb-md-3 ">
-                    <img class="new__article__img" src="../img/hades__not.jpg" alt="imagen de noticia de hades">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Nueva guia</p>
-                        <h3>Hades en maxima dificultad.</h3>
-                        <p class="d-none d-md-block">Cansado de intentar vencer a hades una y otra vez? observa esta guia y descubre tips y trucos.</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-    
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/cult_of_the_lamb.jpg" alt="imagen de noticia de cult of the lamb">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Nueva guia</p>
-                        <h3>Crea tu propio culto en Cult of the Lamb</h3>
-                        <p class="d-none d-md-block">Descubre como mantener a tu secta feliz y en orden con esta nueva guia, y evitar quedarte sin camas.</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-    
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/cuphead__not.jpg" alt="imagen de noticia de cuphead">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Noticia</p>
-                        <h3>Nuevo record de tiempo en Cuphead</h3>
-                        <p class="d-none d-md-block">Nuevo record speedrun de cuphead, descubre quien a sido y como lo hizo, y talvez logres ser el proximo.</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/hades__not.jpg" alt="imagen de noticia de hades">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Noticia</p>
-                        <h3>Nuevo dlc de Hades</h3>
-                        <p class="d-none d-md-block">Descubre lo nuevo en Hades y quien es ese nuevo dios que a decidido visitarnos en el inframundo.</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/isaac__not.jpg" alt="imagen de noticia de cuphead">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Guia</p>
-                        <h3>Descubre las mejores sinergias de objetos</h3>
-                        <p class="d-none d-md-block">Averigua cuales son las mejores sinergias de isaac de entre tantos objetos y posibilidades.</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/stray__not.jpg" alt="imagen de noticia de cuphead">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Noticia</p>
-                        <h3>El BOOM de Stray a parado</h3>
-                        <p class="d-none d-md-block">Parece ser que la moda del gato en un mundo cyberpunk a parado, pero quizas veamos mas cosas en un futuro.</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/stardew__not.jpg" alt="imagen de noticia de cuphead">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Noticia</p>
-                        <h3>Capsulas misteriosas en los cultivos</h3>
-                        <p class="d-none d-md-block">Hace poco han empezado a aparecer capsulas misteriosas en los cultivos, y se han visto sombras por el pueblo.</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/vrising2__not.jpg" alt="imagen de noticia de cuphead">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Guia</p>
-                        <h3>Averigua todo sobre los sirvientes</h3>
-                        <p class="d-none d-md-block">Descubre todo lo que tienes que saber para tener tu granja de sangre al maximo y un ejercito invensible.</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/silksong__not.jpg" alt="imagen de noticia de cuphead">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Noticias?</p>
-                        <h3>Algun dia veremos llegar Silksong?</h3>
-                        <p class="d-none d-md-block">Ya han pasado años y la fecha sigue posponiendose, algun dia descubriremos a donde se a ido Silk?</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/blasphemus__not.jpg" alt="imagen de noticia de cuphead">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Guia</p>
-                        <h3>Se todo un blasfemo con esta nueva guia</h3>
-                        <p class="d-none d-md-block">Descubre cada rincon de los largos pasillos de blasphemus y desmiembra a tus enemigos con las mejores armas.</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-
-                <article class="new__article d-md-flex pb-md-3">
-                    <img class="new__article__img" src="../img/vrising__not.jpg" alt="imagen de noticia de cuphead">
-                    
-                    <div class="new__article__info ps-md-3">
-                        <p>Oferta</p>
-                        <h3>20% de descuento en STEAM</h3>
-                        <p class="d-none d-md-block">Aprovecha esta oportunidad y obten un 20% de descuento en tu compra de V Rising (Solo hasta el 13/10).</p>
-                        <a class="d-none d-md-inline-block">Leer mas</a>
-                    </div>
-                </article>
-
-                <button class="boton__num">1</button>
-                <button class="boton__num">2</button>
-                <button class="boton__num">3</button>
-                <button class="boton__num">4</button>
-                <button class="boton__num">...</button>
-                <button class="boton__num">777</button>
-    
-            </section>
-
-            <div class="new d-none d-lg-inline-block col-lg-3">
-
-                <h2>Categorias</h2>
-                <h3 class="mb-2">General</h3>
-                <div class="mb-2">
+            <div class="lateral d-none d-lg-block">
+                <section class="category">
+                    <h2><span class="ff-kenya">Síguenos</span></h2>
+                    <h4 class="ff-kenya">General</h4>
                     <button class="boton__category">Actualizaciones</button>
                     <button class="boton__category">Industria</button>
                     <button class="boton__category">Novedades</button>
                     <button class="boton__category">Ofertas</button>
-                </div>
-                <h3 class="mb-2">Desarrolladoras</h3>
-                <div class="mb-2">
-                    <button class="boton__category">StudioMDHR</button>
+
+                    <h4 class="ff-kenya">Desarrolladoras</h4>
+                    <button class="boton__category">Studio MDHR</button>
                     <button class="boton__category">Team Cherry</button>
                     <button class="boton__category">Supergiant</button>
-                    <button class="boton__category">Coffe Stain</button>
-                </div>
-                <h3 class="mb-2">Generos</h3>
-                <div class="mb-2">
-                    <button class="boton__category">Lucha</button>
+                    <button class="boton__category">Coffee Stain</button>
+
+                    <h4 class="ff-kenya">Géneros</h4>
                     <button class="boton__category">Pixel Art</button>
+                    <button class="boton__category">Lucha</button>
+                    <button class="boton__category">Supervivencia</button>
                     <button class="boton__category">Metroidvania</button>
                     <button class="boton__category">Roguelike</button>
-                </div>
+                    <button class="boton__category">Puzzles</button>
+                </section>
 
-                <div class="spam d-inline-block mb-3 d-none d-md-block">
-                    <div class="spam__lateral">
-                        <img class="spam__lateral__logo img-fluid" src="../img/logo_white2.png" alt="oferta de Hollow Knight">
-                        <p>Unete a IndieGames y recibe novedades de guias directamente a tu correo.</p>
-                        <img class="spam__lateral__img d-none d-md-block img-fluid" src="../img/cult-of-the-lamb.jpg" alt="imagen de noticia de cult of the lamb">
-                        <button class="pulsa boton__unete">Unete</button>
+                <section class="lateral__follow">
+                    <h2><span class="ff-kenya">Síguenos</span></h2>
+
+                    <div class="redes">
+                        <a href="">
+                            <img src="../img/icon_facebook.png" alt="">
+                        </a>
+                        <p class="ff-kenya"> IndieGames<span class="ff-kenya"> 23k followers</span></p>
                     </div>
-                </div>
-    
-            </div>
+                    <div class="redes">
+                        <a href="">
+                            <img src="../img/icon_youtube.png" alt="">
+                        </a>
+                        <p class="ff-kenya">IndieGameplays<span class="ff-kenya"> 45.3k subs</span></p>
+                    </div>
+                    <div class="redes">
+                        <a href="">
+                            <img src="../img/icon_instagram.png" alt="">
+                        </a>
+                        <p class="ff-kenya">IndieNews <span class="ff-kenya"> 780k followers</span></p>
+                    </div>
+                    <div class="redes">
+                        <a href="">
+                            <img src="../img/icon_twitch.png" alt="">
+                        </a>
+                        <p class="ff-kenya">IndieGameplays<span class="ff-kenya"> 43k subs</span></p>
+                    </div>
+                    <div class="redes">
+                        <a href="">
+                            <img src="../img/icon_twitter.png" alt="">
+                        </a>
+                        <p class="ff-kenya">IndieFlashNews <span class="ff-kenya"> 88k retweets</span></p>
+                    </div>
+                </section>
 
+                <section class="lateral__publicidad">
+                    <img src="../img/coca cola2.jpg" alt="">
+                    <p>Publicidad</p>
+                </section>
+
+                <div class="lateral__sub">
+                    <h2><span class="ff-kenya">Unete</span></h2>
+                    <section class="sub__lateral">
+                        <img class="sub__lateral__logo img-fluid" src="../img/logo_white3.png"
+                            alt="oferta de Hollow Knight">
+                        <p class="ff-kenya">Unete a IndieGames y recibe novedades de guias directamente a tu correo.</p>
+                        <form class="form">
+                            <div class="form__div">
+                                <input class="form__div__input" name="fname" type="text" id="nombre" placeholder=" " required>
+                                <label for="nombre" class="form__div__label">Nombre</label>
+                            </div>
+                            <div class="form__div">
+                                <input class="form__div__input" name="lname" type="text" id="apellido" placeholder=" " required>
+                                <label for="apellido" class="form__div__label">Apellido</label>
+                            </div>
+                            <div class="form__div">
+                                <input class="form__div__input" name="correo" type="text" id="email" placeholder=" " required>
+                                <label for="email" class="form__div__label">Email</label>
+                            </div>
+
+                            <input class="boton__unete pulsa" name="eboton" type="submit" value="Enviar">
+
+                        </form>
+                        <a class="more">Mas informacion aqui.</a>
+                    </section>
+                </div>
+
+                <section class="lateral__dest">
+                    <h2><span class="ff-kenya">Post Destacados</span></h2>
+                    <div class="dest__content">
+                        <article class="dest__article">
+                            <a class="enlace__img"><img src="../img/post__indies.jpg" alt=""></a>
+                            <div class="info">
+                                <h4 class="ff-kenya">
+                                    Top 10 nuevos juegos indie para PC...
+                                </h4>
+                                <p>10/11/22</p>
+                            </div>
+                        </article>
+                        <article class="dest__article">
+                            <a class="enlace__img"><img src="../img/post__premio.jpg" alt=""></a>
+                            <div class="info">
+                                <h4 class="ff-kenya">
+                                    Estos son los juegos nominados a...
+                                </h4>
+                                <p>17/10/22</p>
+                            </div>
+                        </article>
+                        <article class="dest__article">
+                            <a class="enlace__img"><img src="../img/post__silksong.jpg" alt=""></a>
+                            <div class="info">
+                                <h4 class="ff-kenya">
+                                    Silksong confirma su lanzamiento...
+                                </h4>
+                                <p>18/11/22</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
         </div>
             
     </main>
 
-    <footer class="footer row justify-content-md-between">
+    <footer class="footer mt-4">
 
-        <div class="footer__div col-md-4 p-md-2 mb-3">
-            <img class="footer__logo" src="../img/logo_white.png" alt="">
-            <p class="footer__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus facere asperiores accusantium fugiat veniam, odio blanditiis accusamus facilis similique sint suscipit. Quis ducimus, labore deleniti in numquam facilis, at deserunt, magnam fugit ullam ipsum voluptatem amet voluptatibus dolor ex esse?
-            </p>
-            <h4>Redes sociales</h4>
-            <div class="footer__icons">
-                <i class="fa-brands fa-square-twitter pulsa"></i>
-                <i class="fa-brands fa-square-instagram pulsa"></i>
-                <i class="fa-brands fa-square-facebook pulsa"></i>
+        <nav class="footer__nav d-flex">
+            <ul class="d-md-flex">
+                <li><a class="ff-kenya" href="">Inicio</a></li>
+                <li><a class="ff-kenya" href="">Noticias</a></li>
+                <li><a class="ff-kenya" href="">Desarrolladoras</a></li>
+                <li><a class="ff-kenya" href="">Guias</a></li>
+                <li><a class="ff-kenya" href="">Únete</a></li>
+            </ul>
+        </nav>
+
+        <section class="footer__follow d-none d-md-inline-flex">
+            <h3 class="ff-kenya">SÍGUENOS</h3>
+            <div class="icons">
+                <a href="">
+                    <img src="../img/icon_facebook.png" alt="">
+                </a>
             </div>
-        </div>
-
-        <div class="footer__nav col-md-4">
-            <h4>Navegacion</h4>
-            <nav class="nav__footer">
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Noticias</a></li>
-                    <li><a href="">Desarrolladoras</a></li>
-                    <li><a href="">Guias</a></li>
-                    <li><a href="">Unete</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="footer__div col-md-4">
-            <h4>Contacto</h4>
-            <div class="footer__contact">
-                <div class="footer__info">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>666-666-666-666</p>
-                </div>
-                <div class="footer__info">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>Dalequesonpasteles@hotmail.com</p>
-                </div>
-                <div class="footer__info">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Gotham City</p>
-                </div>
+            <div class="icons">
+                <a href="">
+                    <img src="../img/icon_instagram.png" alt="">
+                </a>
             </div>
-        </div>
-
-        <section class="footer__bajo">
-            <h5>Diseño by EMANUEL RUIZ</h5>
-            <img class="footer__logo2 d-none d-md-block" src="../img/logo_white2.png" alt="">
+            <div class="icons">
+                <a href="">
+                    <img src="../img/icon_twitch.png" alt="">
+                </a>
+            </div>
+            <div class="icons">
+                <a href="">
+                    <img src="../img/icon_twitter.png" alt="">
+                </a>
+            </div>
+            <div class="icons">
+                <a href="">
+                    <img src="../img/icon_youtube.png" alt="">
+                </a>
+            </div>
         </section>
+
+        <div class="footer__img">
+            <img class="footer__img__logo" src="../img/logo_white2.png" alt="">
+        </div>
+
+        <div class="footer__info">
+            <div class="politic d-flex">
+                <a class="" href="">POLÍTICAS DE PRIVACIDAD</a>
+                <a class="" href="">DOCUMENTOS LEGALES</a>
+            </div>
+
+            <div class="info">
+                <p>©2022 IndieGames. Reservados todos los derechos. Todas las marcas comerciales son propiedad de sus
+                    respectivos dueños.</p>
+            </div>
+        </div>
 
     </footer>
 

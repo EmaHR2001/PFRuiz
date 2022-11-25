@@ -7,11 +7,14 @@
     border-bottom: 1px solid $color-primario;
 
     .nav {
-
+        width: 100%;
+        justify-content: space-between;
         padding: 0px 0.5rem;
+        align-items: center;
 
         &__logo {
             width: 180px;
+            height: 100%;
         }
 
         .activo {

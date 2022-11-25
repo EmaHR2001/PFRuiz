@@ -1,66 +1,119 @@
 .footer {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #000;
-    padding: 10px 10px;
+    padding: 20px;
 
-    i {
-        color: $color-primario;
+    a {
+        color: #fff;
     }
 
-    ul {
-        padding: 0 0 0 15px;
-    }
+    &__nav {
 
-    &__div {
-        text-align: center;
+        ul {
+            padding: 0;
+            list-style: none;
 
-        .footer__text {
-            font-size: 0.7rem;
+            li {
+                @include mobile-md {
+                    margin-left: 20px;
+                    padding-left: 20px;
+                    border-left: 1px solid $color-primario;
+                }
+
+                &:first-child {
+                    margin-left: 0px;
+                    padding-left: 0px;
+                    border-left: none;
+                }
+            }
+            a {
+                font-size: 1.6rem;
+            }
         }
 
-        i {
-            font-size: 2rem;
+        @include mobile-lg {
+            width: 50%;
+        }
+    }
+
+    &__follow {
+        width: 100%;
+        .icons {
+            width: 35px;
+            height: 35px;
+            overflow: hidden;
+            margin-left: 10px;
+            img {
+                width: 100%;
+
+                &:hover {
+                    transition: transform .5s;
+                    transform: translateY(-35px);
+                }
+            }
+        }
+
+        @include mobile-lg {
+            width: 50%;
+            justify-content: right;
+        }
+    }
+
+    &__img {
+        &__logo {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        @include mobile-md {
+            width: 50%;
+            margin-top: 10px;
+        }
+
+        @include mobile-lg {
+            width: 30%;
+            padding-right: 40px;
         }
     }
 
     &__info {
-        i {
-            margin-bottom: 10px;
-        }
-    }
+        .politic {
+            max-width: 450px;
+            a {
+                display: inline-block;
+                padding: 5px;
+                width: 50%;
+                &:first-child {
+                    border-right: 1px solid $color-terceario;
+                }
+                &:last-child {
+                    text-align: right;
+                    padding-right: 20px;
+                }
 
-    &__nav {
-        width: 150px;
-    }
-
-    &__logo {
-        margin-bottom: 10px;
-        width: 70%;
-    }
-
-    &__logo2 {
-        @include mobile-md {
-            width: 170px;
-        }
-    }
-
-    &__bajo {
-        padding-top: 10px;
-        border-top: 1px solid $color-terceario;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @include mobile-md {
-            font-size: 1rem;
-        }
-
-        h5 {
-            font-size: 0.7rem;
-            margin: 0px;
-
+                &:hover {
+                    color: $color-primario;
+                }
+            }
+    
             @include mobile-md {
-                font-size: 1rem;
+                margin-top: 10px;
             }
         }
+    
+        .info {
+            margin-top: 10px;
+    
+            p {
+                margin: 0;
+            }
+        }
+
+        @include mobile-lg {
+            width: 50%;
+            justify-content: right;
+        }
     }
+
 }
