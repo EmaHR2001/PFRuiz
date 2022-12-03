@@ -25,7 +25,7 @@
 
         .info__div {
             position: relative;
-            z-index: 100;
+            z-index: 2;
 
             i {
                 font-size: 2rem;
@@ -54,7 +54,6 @@
     &__form {
         margin-top: 40px;
         padding: 20px;
-        z-index: 2;
         scale: 1.05;
         border-radius: 10px;
         background-color: #222222;

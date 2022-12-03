@@ -1012,6 +1012,68 @@ h2 span {
   }
 }
 
+.noticia {
+  padding: 10px 10px 30px;
+  background-color: #181818;
+}
+.noticia h2 {
+  font-size: 3rem;
+}
+.noticia .data {
+  display: block;
+  color: white;
+  opacity: 0.5;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+.noticia .data i {
+  margin: 10px;
+}
+.noticia__img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.noticia h3 {
+  font-size: 2rem;
+}
+.noticia .eti a {
+  color: white;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #f2941f;
+}
+.noticia .relacionados__article {
+  margin-top: 10px;
+  position: relative;
+}
+.noticia .relacionados__article h4 {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  font-size: 1rem;
+  background-color: rgba(24, 24, 24, 0.6980392157);
+  padding: 5px;
+  width: 100%;
+}
+.noticia .relacionados img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .noticia .relacionados {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+  }
+  .noticia .relacionados h2 {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 768px) {
+  .noticia {
+    padding: 10px 50px 30px;
+  }
+}
+
 .new__article {
   margin-top: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -1117,7 +1179,7 @@ h2 span {
 }
 .suscripcion__info .info__div {
   position: relative;
-  z-index: 100;
+  z-index: 2;
 }
 .suscripcion__info .info__div i {
   font-size: 2rem;
@@ -1145,7 +1207,6 @@ h2 span {
 .suscripcion__form {
   margin-top: 40px;
   padding: 20px;
-  z-index: 2;
   scale: 1.05;
   border-radius: 10px;
   background-color: #222222;
